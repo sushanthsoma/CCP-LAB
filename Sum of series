@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,n;
+    float sums = 0.0, ser;
+    printf("Enter maximum range: ");
+    scanf("%d",&n);
+    for(i = 1; i <= n; ++i)
+    {
+        ser = (float)i/(float)(i+1);
+        sums += ser;
+    }
+    printf("Sum of series is %f\n", sums);
+    return 0;
+}
